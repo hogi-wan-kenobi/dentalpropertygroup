@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #1c4587;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 20px;
+}
+
+nav{
+    margin-right: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 45px); /* Subtract the height of the header */
+  margin-top: 45px; /* Height of the header */
+  background-image: url("img/Grand%20Corner%20Dental.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#home .content{
+    text-align: left;
+    width: 75%;
+}
+
+#home h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 36px;
+}
+
+section {
+  margin:0;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-right {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.split{
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0;
+}
+
+.split-section {
+  display: flex;
+  align-items: stretch;
+}
+
+.split-section-right {
+  margin:0;   
+  display: flex;
+  align-items: stretch;
+  background-color: #1c4587;
+}
+
+.image-section {
+  margin:0;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+h2{
+    margin: 0;
+}
+
+.image-section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Added to ensure the image fills the container */
+  height: 100%; /* Added to fill the entire height of the container */
+}
+
+.team-section {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup {
+  position: relative;
+  margin: 7vh auto;
+  width: 80%;
+  height: 80vh;
+/*  max-width: 600px;*/
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+    
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.column {
+  width: 50%;
+  float: left;
+}
+
+/* Rest of the CSS code remains the same */
+
