@@ -29,9 +29,9 @@
     <section class="split">
         <div class="split-section">
           <div class="content">
-            <h2>Section 1</h2>
-            <p>Some text here</p>
-            <button class="expand-btn" data-popup="popup1">Expand</button>
+            <h2>Who We Are</h2>
+            <p>DPG is a private equity backed, nationwide real estate acquisition firm focused exclusively on single-tenant properties with dental practices. Our team is made up of institutionally trained leaders and Board of Advisors comprised of seasoned professionals in the real estate and dental industries. Our aim goal is to become the go to acquisition partner in the dental industry.</p>
+<!--            <button class="expand-btn" data-popup="popup1">Expand</button>-->
           </div>
           <div class="image-section">
             <img src="img/Grand%20Corner%20Dental.jpeg" alt="Image 1">
@@ -43,17 +43,17 @@
             <img src="img/Grand%20Corner%20Dental.jpeg" alt="Image 2">
           </div>
           <div class="content-right">
-            <h2>Section 2</h2>
-            <p>Some text here</p>
-            <button class="expand-btn" data-popup="popup2">Expand</button>
+            <h2>Who We Serve</h2>
+            <p>DPG serves the single practice owner to large established DSOs that are looking for liquidity. DPGs has the capability to acquire large portfolios or individual deals. We strive to prioritize relationships over profits and to ensure that the outcome of all transactions are fair.</p>
+<!--            <button class="expand-btn" data-popup="popup2">Expand</button>-->
           </div>
         </div>
 
         <div class="split-section">
           <div class="content">
-            <h2>Section 3</h2>
-            <p>Some text here</p>
-            <button class="expand-btn" data-popup="popup3">Expand</button>
+            <h2>How We Serve</h2>
+            <p>DPG can be involved in any part of the M&amp;D process. We can be brought in if the real estate is a sticking point, or after an acquisition is made and owner of the property is looking for an exit. DPG believes strongly in the long-term value of dental and our business strategy reflects that. We’re here to stay and not follow the typical real estate model of buy – hold – sell. This continuity in ownership will provide stability and reliability to all our dental tenants.</p>
+<!--            <button class="expand-btn" data-popup="popup3">Expand</button>-->
           </div>
           <div class="image-section">
             <img src="img/Grand%20Corner%20Dental.jpeg" alt="Image 3">
@@ -117,19 +117,19 @@
   <section id="team">
     <div class="team-section">
       <div class="column">
-        <img src="team1.jpg" alt="Team 1">
-        <h3>Team Member 1</h3>
-        <p>Some description about the team member</p>
+        <img class="headshot" src="img/Nic%20Headshot.png" alt="Nic Blosil">
+        <h3>Nic Blosil - CEO</h3>
+        <p>Nic was introduced to the world of dental in the summer of 2022. He recognized the unique market factors in the industry and drawing upon his previous experience in the residential real estate market, identified the real estate opportunity in the dental market. With over seven years of experience in real estate, Nic co-founded Dental Property Group in the fall of 2022. Nic is a graduate of BYU’s Marriott School of Business. In his spare time, he is actively involved in organizing events and firesides focused on faith, music, business, or philanthropy.</p>
       </div>
       <div class="column">
-        <img src="team2.jpg" alt="Team 2">
-        <h3>Team Member 2</h3>
-        <p>Some description about the team member</p>
+        <img class="headshot" src="img/Spencer%20Headshot.png" alt="Spencer Hatfield">
+        <h3>Spencer Hatfield - Head of Acquisitions</h3>
+        <p>Spencer has over seven years of experience providing valuation services to both public and private-sector clients. He has extensive expertise across a broad range of industries, including technology, financial services, pharma/life sciences, and real estate, among others. Spencer is a graduate from BYU’s Marriott School of Business with a B.A. of Finance. Spencer has also personally been investing in real estate for over five years.</p>
       </div>
       <div class="column">
-        <img src="team3.jpg" alt="Team 3">
-        <h3>Team Member 3</h3>
-        <p>Some description about the team member</p>
+        <img class="headshot" src="img/homer.png" alt="Jameson Blosil">
+        <h3>Jameson Blosil</h3>
+        <p>While living in New York City, Jameson was introduced to the world of real estate and enrolled at Baruch College to study real estate and finance. Prior to the COVID pandemic, Jameson and his wife moved to Utah and he transferred to BYU to continue his education. He began working for a nationwide student housing property management company overseeing a portfolio of properties. This included the development of a 25-unit property. Jameson previously interned at two private equity real estate firms in Provo, Utah.</p>
       </div>
     </div>
   </section>
@@ -137,9 +137,9 @@
   <section id="contact">
     <div class="contact-section">
       <h2>Contact Us</h2>
-      <form id="contact-form" action="submit.php" method="POST">
+      <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
         <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
@@ -148,5 +148,21 @@
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script>function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "hogan@cobahealth.com",
+        Password : "3FACD29AEF2DA3F7245274CF0714F4EFEBB5",
+        To : 'lelandhjac@gmail.com',
+        From : "hogan@cobahealth.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+        message => alert(message)
+    );
+        }
+    </script>
 </body>
 </html>

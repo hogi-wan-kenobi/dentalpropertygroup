@@ -27,27 +27,27 @@
 
 //USE PHP TO HANDLE AIRTABLE API
 
-$(document).ready(function() {
-  $('#contact-form').submit(function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    var form = $(this);
-    var formData = form.serialize();
-
-    $.ajax({
-      type: 'POST',
-      url: 'submit.php', // Path to your PHP script
-      data: formData,
-      success: function(response) {
-        form[0].reset();
-        alert('Message sent successfully!');
-      },
-      error: function(xhr, status, error) {
-        alert('Failed to send message. Please try again later.');
-      }
-    });
-  });
-});
+//$(document).ready(function() {
+//  $('#contact-form').submit(function(event) {
+//    event.preventDefault(); // Prevent form submission
+//
+//    var form = $(this);
+//    var formData = form.serialize();
+//
+//    $.ajax({
+//      type: 'POST',
+//      url: 'submit.php', // Path to your PHP script
+//      data: formData,
+//      success: function(response) {
+//        form[0].reset();
+//        alert('Message sent successfully!');
+//      },
+//      error: function(xhr, status, error) {
+//        alert('Failed to send message. Please try again later.');
+//      }
+//    });
+//  });
+//});
 
 var expandButtons = document.querySelectorAll('.expand-btn');
 var overlays = document.querySelectorAll('.popup');

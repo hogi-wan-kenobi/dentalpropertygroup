@@ -82,6 +82,13 @@ section {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content p{
+    padding: 0 40px;
 }
 
 .content-right {
@@ -89,10 +96,16 @@ section {
   margin: 0 auto;
   text-align: center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-right p{
+    padding: 0 40px;
 }
 
 .split{
-    padding-bottom: 45px;
+/*    padding-bottom: 45px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -129,17 +142,32 @@ h2{
   height: 100%; /* Added to fill the entire height of the container */
 }
 
+#team {
+    background-color: #0d8eba;
+}
+
 .team-section {
   display: flex;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 40px;
 }
 
 .column {
   flex: 1;
   text-align: center;
+  padding: 25px;
+}
+
+.headshot {
+    max-width: 300px;
+    height: auto;
 }
 
 .contact-section {
   text-align: center;
+  padding: 50px;
 }
 
 .contact-section form {
@@ -196,11 +224,4 @@ h2{
   font-size: 24px;
   cursor: pointer;
 }
-
-.column {
-  width: 50%;
-  float: left;
-}
-
-/* Rest of the CSS code remains the same */
 
