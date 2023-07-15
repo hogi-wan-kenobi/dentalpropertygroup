@@ -25,6 +25,25 @@ nav{
     margin-right: 30px;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu-toggle input {
+  display: none;
+}
+
+.menu-icon {
+    color: #fff;
+}
+
 .menu {
   list-style-type: none;
   margin: 0;
@@ -43,6 +62,23 @@ nav{
 
 .menu li a {
   color: #fff;
+  text-decoration: none;
+}
+
+.menu-pop {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu-pop li {
+  padding: 20px;
+}
+
+.menu-pop li a {
+  color: #1c4587;
   text-decoration: none;
 }
 
@@ -231,6 +267,19 @@ h2{
 
 @media (max-width: 768px) {
  
+    
+  .menu {
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+    
     .image-section {
         display: none;
     }

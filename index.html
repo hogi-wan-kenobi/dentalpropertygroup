@@ -10,7 +10,12 @@
       <img src="img/logo%20transparency%20v2.png" alt="Logo">
     </div>
   <nav>
-    
+      <div class="menu-toggle">
+      <input type="checkbox" id="menu-toggle-checkbox">
+      <label for="menu-toggle-checkbox" class="expand-btn" data-popup="popup1">&#9776;</label>
+          
+    </div>
+      
     <ul class="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#team">Our Team</a></li>
@@ -68,16 +73,13 @@
 <!--    Popup 1    -->
   <div class="popup" id="popup1">
     <button class="close-btn">X</button>
-    <section class="split-section">
-      <div class="column">
-        <h3>Column 1</h3>
-        <p>Some content for column 1</p>
-      </div>
-      <div class="column">
-        <h3>Column 2</h3>
-        <p>Some content for column 2</p>
-      </div>
-    </section>
+    <div class="menu-container">
+      <ul class="menu-pop">
+        <li class="menu-btn"><a href="#home">Home</a></li>
+        <li class="menu-btn"><a href="#team">Our Team</a></li>
+        <li class="menu-btn"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
     
 <!--    Popup 2    -->
@@ -85,7 +87,7 @@
     <button class="close-btn">X</button>
     <section class="split-section">
       <div class="column">
-        <h3>Column 1</h3>
+        <h3>Pop 2</h3>
         <p>Some content for column 1</p>
       </div>
     <div class="column">
@@ -100,7 +102,7 @@
     <button class="close-btn">X</button>
     <section class="split-section">
       <div class="column">
-        <h3>Column 1</h3>
+        <h3>Pop 3</h3>
         <p>Some content for column 1</p>
       </div>
     <div class="column">
@@ -108,6 +110,15 @@
       <p>Some content for column 2</p>
     </div>
     </section>
+  </div>
+    
+    <div class="popup" id="popup4">
+    <button class="close-btn">X</button>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
     
 </div>
