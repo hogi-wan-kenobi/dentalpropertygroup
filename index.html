@@ -138,9 +138,9 @@
     <div class="contact-section">
       <h2>Contact Us</h2>
       <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
-        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
         <input type="email" name="email" id="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
@@ -155,12 +155,14 @@
         Host : "smtp.elasticemail.com",
         Username : "hogan@cobahealth.com",
         Password : "3FACD29AEF2DA3F7245274CF0714F4EFEBB5",
-        To : "nic@dentalpropertygroup.com",
+        To : "jameson@dentalpropertygroup.com",
         From : document.getElementById("email").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : "Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value 
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Message: " + document.getElementById("message").value
         }).then(
-        message => alert(message)
+        message => alert("Message Sent Successfully")
     );
         }
     </script>
