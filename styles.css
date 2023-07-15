@@ -94,18 +94,19 @@ html, body {
   justify-content: center;
   height: calc(100vh - 45px); /* Subtract the height of the header */
   margin-top: 45px; /* Height of the header */
-  background-image: url("img/Grand%20Corner%20Dental.jpeg");
+  background-image: url("img/Office-Overlay.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #home .content{
     text-align: left;
-    width: 75%;
+    width: 90%;
 }
 
 #home h1 {
-  margin: 0px;
+  margin-top: 0px;
+  padding-top: 50px;
   color: #fff;
   font-size: 36px;
 }
