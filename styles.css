@@ -180,7 +180,7 @@ h2{
 }
 
 #team {
-    background-color: #0d8eba;
+    background-color: #1c4587;
 }
 
 .team-section {
@@ -194,12 +194,18 @@ h2{
 .column {
   flex: 1;
   text-align: center;
-  padding: 25px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
 }
 
 .headshot {
     max-width: 300px;
     height: auto;
+}
+
+.team-section .column {
+    color: #1c4587;
 }
 
 .contact-section {
